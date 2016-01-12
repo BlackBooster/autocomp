@@ -1,0 +1,4 @@
+var new_post = $('<%= escape_javascript(render(partial: @post_new))%>').hide(); 
+$("table tr:last").after(new_post);
+new_post.fadeIn('slow');
+$('#new_post')[0].reset();
