@@ -1,6 +1,6 @@
 $(document).ready( function () {
   $(".edit_post").on('click', function(){
-    $(this).parent().parent().next().fadeIn(500);
+    $('#edit_tr').show();
   });
   $(".edit_submit").on('click', function(){
     var inp = $(this).parent().parent().children().children().val(); //gives input's value
